@@ -1,0 +1,144 @@
+import imgImage from "./e723a3a921b7364a9fd5c9987650e639e5e37b99.png";
+import imgImage1 from "./4c364980273eb285a6b98bd2ce5d58313866c189.png";
+import imgImage2 from "./385737d7a5d62e174796a599ef23edf3d6bc4011.png";
+import imgAdobeStock21193823451 from "./ca29ebb5ce9110ae4adfe1b468f6a072dbe0c24e.png";
+
+function Text() {
+  return (
+    <div className="[word-break:break-word] content-stretch flex flex-col gap-[8px] items-start leading-[0] not-italic relative shrink-0 w-full" data-name="Text">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center relative shrink-0 text-[24px] text-black tracking-[-0.48px] w-full">
+        <h5 className="block leading-[1.2]">A small card</h5>
+      </div>
+      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center relative shrink-0 text-[18px] text-[rgba(0,0,0,0.55)] tracking-[-0.09px] w-full">
+        <p className="leading-[1.45]">Call out a feature, benefit, or value of your site that can stand on its own.</p>
+      </div>
+    </div>
+  );
+}
+
+function Card() {
+  return (
+    <li className="content-stretch flex flex-[1_0_0] flex-col gap-[32px] items-start max-w-[388px] min-w-[336px] relative rounded-[8px]" data-name="Card 1">
+      <div aria-hidden className="aspect-[362.6666564941406/483] relative rounded-[16px] shrink-0 w-full" role="presentation" data-name="Image">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[16px] size-full" src={imgImage} />
+      </div>
+      <Text />
+    </li>
+  );
+}
+
+function Text1() {
+  return (
+    <div className="[word-break:break-word] content-stretch flex flex-col gap-[8px] items-start leading-[0] not-italic relative shrink-0 w-full" data-name="Text">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center relative shrink-0 text-[24px] text-black tracking-[-0.48px] w-full">
+        <h5 className="block leading-[1.2]">A little glimpse</h5>
+      </div>
+      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center relative shrink-0 text-[18px] text-[rgba(0,0,0,0.55)] tracking-[-0.09px] w-full">
+        <p className="leading-[1.45]">Call out a feature, benefit, or value of your site that can stand on its own.</p>
+      </div>
+    </div>
+  );
+}
+
+function Card1() {
+  return (
+    <li className="content-stretch flex flex-[1_0_0] flex-col gap-[32px] items-start max-w-[388px] min-w-[336px] relative rounded-[8px]" data-name="Card 2">
+      <div aria-hidden className="aspect-[362.66668701171875/483] relative rounded-[16px] shrink-0 w-full" role="presentation" data-name="Image">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[16px] size-full" src={imgImage1} />
+      </div>
+      <Text1 />
+    </li>
+  );
+}
+
+function Text2() {
+  return (
+    <div className="[word-break:break-word] content-stretch flex flex-col gap-[8px] items-start leading-[0] not-italic relative shrink-0 w-full" data-name="Text">
+      <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center relative shrink-0 text-[24px] text-black tracking-[-0.48px] w-full">
+        <h5 className="block leading-[1.2]">A quick peek</h5>
+      </div>
+      <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium justify-center relative shrink-0 text-[18px] text-[rgba(0,0,0,0.55)] tracking-[-0.09px] w-full">
+        <p className="leading-[1.45]">Call out a feature, benefit, or value of your site that can stand on its own.</p>
+      </div>
+    </div>
+  );
+}
+
+function Card2() {
+  return (
+    <li className="content-stretch flex flex-[1_0_0] flex-col gap-[32px] items-start max-w-[388px] min-w-[336px] relative rounded-[8px]" data-name="Card 3">
+      <div aria-hidden className="aspect-[362.66668701171875/483] relative rounded-[16px] shrink-0 w-full" role="presentation" data-name="Image">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[16px] size-full" src={imgImage2} />
+      </div>
+      <Text2 />
+    </li>
+  );
+}
+
+function FeatureCards() {
+  return (
+    <ul className="absolute content-stretch flex gap-[32px] items-start justify-center left-[1130px] px-[64px] py-[120px] top-[576px] w-[1280px]" data-name="Feature cards 1">
+      <Card />
+      <Card1 />
+      <Card2 />
+    </ul>
+  );
+}
+
+function Frame2() {
+  return <div className="absolute h-[232px] left-[1060px] top-[1757px] w-[726px]" />;
+}
+
+function Frame1() {
+  return (
+    <div className="absolute h-[3231px] left-[441px] top-[-628px] w-[2961px]">
+      <div className="absolute bottom-[463px] h-[1722px] mix-blend-soft-light right-[-101px] w-[2863px]" data-name="Union">
+        <svg className="absolute block inset-0 size-full" fill="none" height="1722" preserveAspectRatio="none" viewBox="0 0 2863 1722" width="2863">
+          <g id="Union" style={{ mixBlendMode: "soft-light" }}>
+            <path d="M2863 1722H0V0H2863V1722Z" fill="#22FF00" />
+          </g>
+        </svg>
+      </div>
+      <Frame2 />
+    </div>
+  );
+}
+
+export default function Frame() {
+  return (
+    <div className="relative size-full">
+      <FeatureCards />
+      <div className="absolute aspect-[3840/2160] bottom-0 left-0 top-0" data-name="AdobeStock_2119382345 1">
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgAdobeStock21193823451} />
+      </div>
+      <Frame1 />
+      <a className="absolute bg-[red] block border-2 border-solid border-white cursor-pointer left-[1367px] size-[22px] top-[1030px]" href="https://page-7" target="_self" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1679px] size-[22px] top-[802px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1763px] size-[22px] top-[840px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white bottom-[428px] left-[1657px] size-[22px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1248px] size-[22px] top-[1384px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1158px] size-[22px] top-[1300px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1525px] size-[22px] top-[1167px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1454px] size-[22px] top-[1189px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1345px] size-[22px] top-[1063px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1311px] size-[22px] top-[1041px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1237px] size-[22px] top-[978px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1248px] size-[22px] top-[1085px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1226px] size-[22px] top-[1167px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1270px] size-[22px] top-[1156px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1300px] size-[22px] top-[1145px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1333px] size-[22px] top-[1107px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1300px] size-[22px] top-[1074px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1259px] size-[22px] top-[897px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1278px] size-[22px] top-[946px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1490px] size-[22px] top-[623px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1432px] size-[22px] top-[824px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1512px] size-[22px] top-[802px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1389px] size-[22px] top-[875px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1534px] size-[22px] top-[1278px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1270px] size-[22px] top-[1336px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1579px] size-[22px] top-[1427px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white bottom-[417px] left-[1601px] size-[22px]" />
+      <div className="absolute bg-[red] border-2 border-solid border-white left-[1476px] size-[22px] top-[1373px]" />
+    </div>
+  );
